@@ -1,0 +1,18 @@
+
+{% extends 'base.html' %}
+
+{%block content %}
+
+<ul>
+
+    {% for snack in snacks %}
+
+    <li>{{snack.name}} - Tür : {{snack.kind}}</li>
+
+    {% endfor%}
+
+
+
+
+</ul>
+{%endblock%}
